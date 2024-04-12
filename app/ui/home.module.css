@@ -1,0 +1,79 @@
+.title {
+  opacity: 0;
+  animation: fadeIn 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.questions {
+    text-align: center;
+}
+
+ .questions li:first-child {
+  margin-top: 5%;
+}
+
+ .questions li {
+  font-size: 1.2em;
+  margin-top: 1.5%;
+  opacity: 0;
+  animation: fadeIn 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.questions li:nth-child(n + 1) {
+  animation-delay: 1s;
+}
+
+.questions li:nth-child(n + 2) {
+  animation-delay: 1.8s;
+}
+
+.questions li:nth-child(n + 3) {
+  animation-delay: 2.6s;
+}
+
+.questions li:nth-child(n + 4) {
+  animation-delay: 3.4s;
+}
+
+/* #animation-wrapper {
+  opacity: 0;
+  animation-name: fadeIn, shake;
+  animation-duration: 0.5s, 0.5s;
+  animation-delay: 4.2s, 4.7s;
+  animation-fill-mode: forwards;
+  margin: 0 auto;
+  width: 90%;
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-3px, 1px, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(3px, -1px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-0.5px, 0.5px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(1px, -0.5px, 0);
+  }
+}

@@ -1,0 +1,60 @@
+.button {
+  border-radius: 2.5em;
+  background-color: #ff4093;
+  border: none;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 1em;
+  padding: 0.5em 2em;
+  font-weight: 500;
+}
+
+.button a {
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #ea1e76cb;
+}
+
+.shaky {
+  opacity: 0;
+  animation-name: fadeIn, shake;
+  animation-duration: 0.5s, 0.5s;
+  animation-delay: 4.2s, 4.7s;
+  animation-fill-mode: forwards;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-3px, 1px, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(3px, -1px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-0.5px, 0.5px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(1px, -0.5px, 0);
+  }
+}

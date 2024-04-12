@@ -1,33 +1,39 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  background-color: #121212;
+  font-family: "Raleway", sans-serif;
+  color: #e9e9e9;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 300;
+  margin: 3% auto;
+  width: 60%;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  padding-top: 1%;
+  background: #121212;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#eltaskyline {
+  height: 20vh;
+  position:relative;
+  background-image: linear-gradient(0deg, #5b919e 0%, #0e4654 100%);
+  /* margin-bottom: -1px; */
 }
