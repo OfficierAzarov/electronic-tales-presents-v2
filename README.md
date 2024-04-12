@@ -16,49 +16,6 @@ Electronic&nbsp;Tales intends to be a safe learning space for and by devs, focus
 
 _The repo you are on is the **presentation** site of the project : Electronic&nbsp;Tales Presents_.
 
-## Installation
-
-Electronic&nbsp;Tales Presents is built in React and Node.js. To run the site on your computer, you need to install `node` and `npm` (https://phoenixnap.com/kb/install-node-js-npm-on-windows).
-
-A project made in React and/or Node.js uses a lot of dependencies specific to these ecosystems. In order not to make things too heavy, we have not put the Electronic&nbsp;Tales dependencies in our repo. So you'll have to download them on your machine. Follow the guide!
-
-1. In your Terminal, put yourself in the folder where you want Electronic&nbsp;Tales to live (I promise, it always makes its bed in the morning and never puts empty milk cartons in the fridge!) Then clone the repo on your computer:
-
-``bash
-git clone https://github.com/OfficierAzarov/electronic-tales-presents.git
-```
-
-2. You now have an electronic-tales-presents folder on your computer. Enter it and do a first time:
-
-``bash
-npm install
-```
-
-This will install all the necessary dependencies for the Node.js (back-end) part of the project.
-
-Next, go into the `client` folder and type&nbsp; again:
-
-``bash
-npm install
-```
-
-This time, this will install all the necessary dependencies for the React (front-end) part of the project.
-
-Close your Terminal to let it think for a second about the meaning of existence and reopen it.
-To start the back-end, go to the `electronic-tales-presents` folder and write
-
-``bash
-npm start
-```
-
-To start the front-end, go to the `electronic-tales-presents/client` folder and write
-
-``bash
-npm start
-``
-
-The Electronic&nbsp;Tales website opens in your browser!
-
 ## License
 
 MIT](https://choosealicense.com/licenses/mit/)
